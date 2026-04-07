@@ -310,6 +310,21 @@
     }
     .timeline-bullets li::before { content: '✦'; position: absolute; left: 0; color: var(--pink); font-size: .5rem; top: .55rem; }
 
+    /* ── EDUCATION ── */
+    #education { background: var(--bg); }
+    .edu-card {
+      background: var(--bg2); border-radius: 20px;
+      padding: 2.2rem; border: 1px solid var(--border);
+      display: flex; gap: 2rem; align-items: flex-start;
+      transition: transform .3s, box-shadow .3s, border-color .3s;
+      max-width: 780px;
+    }
+    .edu-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(255,95,160,0.1); border-color: rgba(255,95,160,0.3); }
+    .edu-icon { font-size: 2.8rem; filter: drop-shadow(0 0 10px var(--pink)); flex-shrink: 0; }
+    .edu-school { font-weight: 700; font-size: 1.05rem; color: var(--white); margin-bottom: .25rem; }
+    .edu-degree { font-size: .85rem; color: var(--pink2); font-weight: 500; margin-bottom: .5rem; }
+    .edu-meta { font-size: .75rem; color: var(--muted); letter-spacing: .5px; }
+
     /* ── PROJECTS ── */
     #projects { background: var(--bg); }
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
@@ -430,6 +445,7 @@
     <li><a href="#about" onclick="closeMenu()">About</a></li>
     <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
     <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#education" onclick="closeMenu()">Education</a></li>
     <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
     <li><a href="#awards" onclick="closeMenu()">Awards</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
@@ -449,6 +465,7 @@
       <span class="first">Baran</span><br>
       <span class="last">Nasiri</span>
     </h1>
+    <p style="font-size:.75rem;color:var(--muted);letter-spacing:1px;margin-bottom:.6rem;margin-top:-.4rem;opacity:0;animation:fadeUp .8s .5s forwards">she/her</p>
     <p class="hero-title" id="typedTitle"><span class="cursor-blink">|</span></p>
     <p class="hero-desc">
       Management Engineering student at the University of Waterloo — turning data into decisions, and ideas into impact.
@@ -502,14 +519,14 @@
       <div class="photo-fallback-sm" style="display:none;">✦</div>
     </div>
     <div class="about-text">
-      <p>Hi, I'm Baran — a Management Engineering student at the University of Waterloo with a passion for blending analytical thinking with real-world impact.</p>
-      <p>My background spans retail, fitness, and nutrition, where I've sharpened skills in data-driven sales, customer analytics, and process optimization. I bring that same energy to every Python project or Excel dashboard I build.</p>
+      <p>Hi, I'm Baran — a Management Engineering student at the University of Waterloo, driven by a curiosity for how systems work and how they can be made better.</p>
+      <p>I build tools that turn messy data into clear decisions — Python scripts, Excel automation, and dashboards that actually get used. I'm drawn to the intersection of engineering thinking and human behavior, whether that's optimizing a workflow, modeling a business problem, or designing a system from scratch.</p>
       <p>Outside of school, I'm passionate about health, fitness, and using technology to help people live better lives.</p>
       <div class="chips">
         <span class="chip">📍 Ontario, Canada</span>
         <span class="chip">🎓 UWaterloo Mgmt. Engineering</span>
-        <span class="chip">💻 Python & VBA</span>
-        <span class="chip">📊 Data Analytics</span>
+        <span class="chip">💻 Python & Automation</span>
+        <span class="chip">📊 Data & Systems Thinking</span>
         <span class="chip">🏆 DECA ICDC Qualifier</span>
       </div>
     </div>
@@ -555,14 +572,14 @@
       </div>
     </div>
     <div class="skill-card reveal">
-      <div class="skill-icon">🛍️</div>
-      <h4>Sales & Operations</h4>
+      <div class="skill-icon">⚙️</div>
+      <h4>Process & Systems</h4>
       <div class="skill-tags">
-        <span class="skill-tag">Consultative Selling</span>
-        <span class="skill-tag">Inventory Management</span>
-        <span class="skill-tag">Merchandising</span>
-        <span class="skill-tag">Member Onboarding</span>
-        <span class="skill-tag">40%+ Conversion Rate</span>
+        <span class="skill-tag">Workflow Automation</span>
+        <span class="skill-tag">Process Mapping</span>
+        <span class="skill-tag">Training Design</span>
+        <span class="skill-tag">Operations Analysis</span>
+        <span class="skill-tag">Continuous Improvement</span>
       </div>
     </div>
   </div>
@@ -577,6 +594,21 @@
   </div>
   <div class="timeline">
     <div class="timeline-item reveal">
+      <div class="timeline-dot" style="background:var(--pink3);box-shadow:0 0 14px var(--pink2),0 0 0 3px rgba(255,194,220,0.2)"></div>
+      <div class="timeline-card" style="border-color:rgba(255,95,160,0.3);background:rgba(255,95,160,0.05)">
+        <div class="timeline-header">
+          <span class="timeline-company">Decora Powder Coatings Ltd.</span>
+          <span class="timeline-date" style="background:linear-gradient(135deg,var(--pink),var(--rose));color:#fff">Spring 2025 ✦</span>
+        </div>
+        <div class="timeline-role">Training & Development Analyst · Human Resources · St. Catharines, Ontario</div>
+        <ul class="timeline-bullets">
+          <li>Joining the HR department to support <strong style="color:var(--pink2)">employee training & development</strong> initiatives</li>
+          <li>Contributing to <strong style="color:var(--pink2)">process improvement</strong> projects within a manufacturing environment</li>
+          <li>Building hands-on experience in organizational development and HR operations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <div class="timeline-header">
@@ -585,10 +617,10 @@
         </div>
         <div class="timeline-role">Brand Ambassador / Sales Associate · Ontario</div>
         <ul class="timeline-bullets">
-          <li>Generated over <strong style="color:var(--pink2)">$76,000</strong> in retail sales through consultative supplement recommendations</li>
-          <li>Advised <strong style="color:var(--pink2)">40+ customers per shift</strong> across 200+ nutrition and wellness products</li>
-          <li>Maintained <strong style="color:var(--pink2)">40%+ conversion rates</strong> by aligning recommendations with customer fitness goals</li>
-          <li>Tracked inventory levels and merchandising for 200+ SKUs</li>
+          <li>Analyzed customer behavior and purchase patterns across <strong style="color:var(--pink2)">200+ SKUs</strong> to inform product placement and restocking decisions</li>
+          <li>Built product knowledge systems to consistently match recommendations to individual customer goals — achieving <strong style="color:var(--pink2)">40%+ conversion rates</strong></li>
+          <li>Tracked and reported on inventory levels, identifying trends and flagging supply gaps proactively</li>
+          <li>Contributed to <strong style="color:var(--pink2)">$76,000+</strong> in sales by applying data-informed, needs-based consulting across 40+ daily interactions</li>
         </ul>
       </div>
     </div>
@@ -601,9 +633,9 @@
         </div>
         <div class="timeline-role">Club Attendant · St. Catharines, Ontario</div>
         <ul class="timeline-bullets">
-          <li>Supported operations for a gym serving <strong style="color:var(--pink2)">1,000+ active members</strong></li>
-          <li>Maintained cleanliness and readiness of 120+ machines and workout stations</li>
-          <li>Assisted with front desk operations and member onboarding</li>
+          <li>Supported daily operations for a facility with <strong style="color:var(--pink2)">1,000+ active members</strong>, developing an eye for process gaps and operational efficiency</li>
+          <li>Maintained readiness standards across 120+ equipment stations, following structured checklists and identifying recurring issues</li>
+          <li>Assisted with member onboarding and front desk workflows, contributing to a smooth and consistent member experience</li>
         </ul>
       </div>
     </div>
@@ -616,9 +648,9 @@
         </div>
         <div class="timeline-role">Key Holder / Sales Associate · Ontario</div>
         <ul class="timeline-bullets">
-          <li>Exceeded monthly sales targets by achieving <strong style="color:var(--pink2)">120%+ of quota</strong></li>
-          <li>Served 50+ customers per shift while managing opening and closing procedures</li>
-          <li>Maintained merchandising displays and inventory organization</li>
+          <li>Trusted with key holder responsibilities — managed opening/closing procedures and held accountability for store operations</li>
+          <li>Consistently exceeded targets at <strong style="color:var(--pink2)">120%+ of monthly quota</strong> by understanding customer needs and optimizing the floor experience</li>
+          <li>Maintained merchandising standards and inventory accuracy across a high-volume retail environment</li>
         </ul>
       </div>
     </div>
@@ -631,11 +663,28 @@
         </div>
         <div class="timeline-role">Sales Associate · Ontario</div>
         <ul class="timeline-bullets">
-          <li>Delivered personalized retail consultations to 40+ customers per shift</li>
-          <li>Increased transaction value through upselling and cross-selling</li>
-          <li>Supported merchandising and inventory organization</li>
+          <li>Applied structured customer needs assessments to deliver tailored recommendations across a diverse product range</li>
+          <li>Developed communication and active listening skills through 40+ daily customer interactions</li>
+          <li>Supported visual merchandising and inventory workflows in a fast-paced environment</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="reveal">
+    <p class="section-tag">Academic background</p>
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="edu-card reveal">
+    <div class="edu-icon">🎓</div>
+    <div>
+      <div class="edu-school">University of Waterloo</div>
+      <div class="edu-degree">Bachelor of Applied Science (BASc) · Management Engineering</div>
+      <div class="edu-meta">Waterloo, Ontario &nbsp;·&nbsp; 2025 – Present</div>
     </div>
   </div>
 </section>
