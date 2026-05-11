@@ -177,12 +177,6 @@
     .btn-solid:hover { background: var(--rose); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,54,106,.42); }
     .btn-outline { background: var(--card); color: var(--text2); border: 1.5px solid var(--border); box-shadow: 0 2px 8px var(--shadow); }
     .btn-outline:hover { border-color: var(--pink); color: var(--pink); transform: translateY(-2px); }
-    .hero-stats {
-      display: flex; gap: 2.2rem; margin-top: 2rem;
-      opacity: 0; animation: fadeUp .7s .85s forwards;
-    }
-    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 700; color: var(--pink); line-height: 1; }
-    .stat-label { font-size: .6rem; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; margin-top: .15rem; }
 
     /* POLAROID */
     .hero-photo-wrap {
@@ -417,6 +411,7 @@
     <li><a href="#quests">Quests</a></li>
     <li><a href="#game">Game</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.instagram.com/8aranineng/" target="_blank" rel="noopener" style="color:var(--pink);font-weight:600;">Insta ↗</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -429,6 +424,7 @@
   <a href="#quests"     onclick="closeNav()">Quests</a>
   <a href="#game"       onclick="closeNav()">Game</a>
   <a href="#contact"    onclick="closeNav()">Contact</a>
+  <a href="https://www.instagram.com/8aranineng/" target="_blank" rel="noopener" onclick="closeNav()" style="color:var(--pink);">Instagram ↗</a>
 </div>
 
 <!-- HERO -->
@@ -438,7 +434,7 @@
     <h1 class="hero-name">hey.<br>i'm <em>Baran.</em></h1>
     <p class="hero-typed" id="typedLine"><span class="blink">|</span></p>
     <p class="hero-bio">
-      management engineering at Waterloo. <strong>GTM Engineer</strong> at Decora,
+      <strong>GTM Engineer</strong> at Decora,
       Growth Engineer at Sema, gym rat by 5am. i build AI agents, cold-email
       founders for fun, and have accidentally turned LinkedIn into a whole thing.
       currently in the business of bringing products nobody has seen before
@@ -446,21 +442,8 @@
     </p>
     <div class="hero-btns">
       <a href="https://linkedin.com/in/barannasiri" target="_blank" rel="noopener" class="btn btn-solid">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/8aranineng/" target="_blank" rel="noopener" class="btn btn-outline">Instagram ↗</a>
       <a href="#contact" class="btn btn-outline">get in touch</a>
-    </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num">15K</div>
-        <div class="stat-label">IG followers built</div>
-      </div>
-      <div>
-        <div class="stat-num">$76K</div>
-        <div class="stat-label">in sales generated</div>
-      </div>
-      <div>
-        <div class="stat-num">3</div>
-        <div class="stat-label">very different roles</div>
-      </div>
     </div>
   </div>
 
@@ -559,8 +542,8 @@
       <div class="exp-role">Growth Engineer</div>
       <ul class="exp-bullets">
         <li>Running AI-powered cold outreach and prospecting campaigns, from copy to automation to tracking what actually converts</li>
-        <li>Helped grow the platform to <strong>25K+ users</strong> and drove <strong>15,000+ followers</strong> through content strategy and targeted growth experiments</li>
-        <li>Generated strong impression velocity within the first week of launch by building systems that run without someone manually pushing them every day</li>
+        <li>Helped grow the platform to <strong>25K+ users</strong> through targeted growth experiments and LinkedIn content strategy</li>
+        <li>Generated <strong>50K+ impressions</strong> in the first week of joining through LinkedIn content alone</li>
         <li>Part content strategy, part growth engineering, part figuring out what works and cutting what doesn't</li>
       </ul>
     </div>
@@ -586,10 +569,10 @@
       </div>
       <div class="exp-role">Growth and Sales · Ontario</div>
       <ul class="exp-bullets">
-        <li>Took Herc's Instagram from zero to 15,000 followers across 6 brand and location pages by actually understanding what made people stop scrolling</li>
-        <li>Supported the buildout of 2 new store openings, which is a lot more chaotic than it sounds</li>
-        <li>Drove <strong>$76K+ in sales</strong> with 40%+ conversion by listening first and pitching second</li>
-        <li>Tracked 200+ SKUs, spotted patterns, flagged gaps. Generally: useful.</li>
+        <li>Took Herc's Instagram from zero to <strong>15,000 followers</strong> across <strong>6 brand and location pages</strong> by actually understanding what made people stop scrolling</li>
+        <li>Supported the buildout of <strong>2 new store openings</strong>, which is a lot more chaotic than it sounds</li>
+        <li>Drove <strong>$76K+ in sales</strong> with <strong>40%+ conversion</strong> by listening first and pitching second</li>
+        <li>Tracked <strong>200+ SKUs</strong>, spotted patterns, flagged gaps. Generally: useful.</li>
       </ul>
     </div>
 
@@ -653,10 +636,11 @@
       <p class="quest-desc">conversion rate: low. caffeine intake: high. learnings: worth it.</p>
     </div>
     <div class="quest reveal">
-      <span class="q-status q-done">done</span>
-      <div class="quest-icon">🏆</div>
-      <div class="quest-title">DECA ICDC qualifier (twice) + financial literacy winner</div>
-      <p class="quest-desc">competed nationally. didn't hate it. actually kind of thrived.</p>
+      <span class="q-status q-arc">arc</span>
+      <div class="quest-icon">📸</div>
+      <div class="quest-title">building to 500K on Instagram. posting about startups, engineering, GTM, and the chaos in between.</div>
+      <p class="quest-desc">long-form content, honest takes, and the occasional unhinged thought. follow if you want front-row seats.</p>
+      <a href="https://www.instagram.com/8aranineng/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;margin-top:.75rem;font-size:.74rem;font-weight:600;color:var(--pink);text-decoration:none;border:1px solid var(--border);border-radius:50px;padding:.28rem .75rem;background:var(--blush);transition:all .2s;" onmouseenter="this.style.background='var(--pink)';this.style.color='#fff'" onmouseleave="this.style.background='var(--blush)';this.style.color='var(--pink)'">follow ↗</a>
     </div>
   </div>
 </section>
