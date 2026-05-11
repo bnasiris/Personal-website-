@@ -190,7 +190,7 @@
       z-index: 1; opacity: 0; animation: fadeIn .9s .3s forwards;
     }
     .polaroid {
-      background: #fff; padding: 10px 10px 38px;
+      background: #fff; padding: 10px 10px 16px;
       box-shadow: 0 12px 36px rgba(26,12,18,.13), 0 2px 6px rgba(26,12,18,.07);
       border-radius: 2px; transform: rotate(2deg);
       position: relative; width: 300px; transition: transform .3s;
@@ -222,7 +222,7 @@
     #about { background: var(--blush); }
     .about-grid { display: grid; grid-template-columns: 260px 1fr; gap: 3.5rem; align-items: start; }
     .about-polaroid {
-      background: #fff; padding: 8px 8px 34px;
+      background: #fff; padding: 8px 8px 14px;
       box-shadow: 0 10px 30px rgba(26,12,18,.11);
       border-radius: 2px; transform: rotate(-2deg); transition: transform .3s;
     }
@@ -270,7 +270,7 @@
     .exp-bullets li strong { color: var(--text2); font-weight: 600; }
 
     /* EDUCATION */
-    #education { background: var(--blush); }
+    #education { background: var(--blush); padding-top: 3.5rem; padding-bottom: 3.5rem; }
     .edu-card {
       display: flex; gap: 1.5rem; align-items: center;
       background: var(--card); border-radius: 18px;
@@ -438,10 +438,11 @@
     <h1 class="hero-name">hey.<br>i'm <em>Baran.</em></h1>
     <p class="hero-typed" id="typedLine"><span class="blink">|</span></p>
     <p class="hero-bio">
-      i build <strong>AI agents</strong>, grew a nutrition brand's instagram
-      from zero to 15K, and take my gym schedule more seriously than most
-      people take meetings. currently helping bring a
-      <strong>first-of-its-kind product</strong> to market.
+      management engineering at Waterloo. <strong>GTM Engineer</strong> at Decora,
+      Growth Engineer at Sema, gym rat by 5am. i build AI agents, cold-email
+      founders for fun, and have accidentally turned LinkedIn into a whole thing.
+      currently in the business of bringing products nobody has seen before
+      to people who don't know they need them yet.
     </p>
     <div class="hero-btns">
       <a href="https://linkedin.com/in/barannasiri" target="_blank" rel="noopener" class="btn btn-solid">LinkedIn ↗</a>
@@ -471,7 +472,6 @@
       <img src="photo.jpg" alt="Baran Nasiri"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="photo-fallback" style="display:none;">✦</div>
-      <div class="polaroid-caption">waterloo eng '30</div>
     </div>
   </div>
 </section>
@@ -489,7 +489,6 @@
       <img src="photo2.jpg" alt="Baran Nasiri"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="photo-fallback-sm" style="display:none;">✦</div>
-      <div class="about-polaroid-caption">me, probably coding</div>
     </div>
 
     <div>
@@ -559,9 +558,10 @@
       </div>
       <div class="exp-role">Growth Engineer</div>
       <ul class="exp-bullets">
-        <li>Running growth experiments end-to-end, from initial hypothesis to shipping</li>
-        <li>Building acquisition funnels and iterating based on actual signal, not vibes</li>
-        <li>Writing the scripts, automations, and dashboards that make growth loops run without someone manually pushing them</li>
+        <li>Running AI-powered cold outreach and prospecting campaigns, from copy to automation to tracking what actually converts</li>
+        <li>Helped grow the platform to <strong>25K+ users</strong> and drove <strong>15,000+ followers</strong> through content strategy and targeted growth experiments</li>
+        <li>Generated strong impression velocity within the first week of launch by building systems that run without someone manually pushing them every day</li>
+        <li>Part content strategy, part growth engineering, part figuring out what works and cutting what doesn't</li>
       </ul>
     </div>
 
@@ -572,10 +572,10 @@
       </div>
       <div class="exp-role">GTM Engineer · St. Catharines, ON</div>
       <ul class="exp-bullets">
-        <li>Decora has a product that's the first of its kind in North America. My job is helping get it into the market.</li>
-        <li>Working on go-to-market strategy, market entry planning, sales and marketing systems, and figuring out how to position something nobody has quite seen before</li>
-        <li>Also embedded in HR helping integrate AI into how the team actually works: training workflows, onboarding systems, internal automation</li>
-        <li>Two very different jobs. Same building. Both interesting.</li>
+        <li>Decora has a product that's the first of its kind in North America. There's no playbook for this, which is exactly why the role exists.</li>
+        <li>Building the go-to-market from scratch: market entry strategy, positioning, outreach infrastructure, and sales and marketing systems for something customers have never seen before</li>
+        <li>The actual work: figuring out who the customer is, how to reach them, what to say, and how to turn an impressive product into something someone buys in 30 seconds</li>
+        <li>Also embedded in HR integrating AI into how the team works: training workflows, onboarding systems, internal automation, and AI agents that save people real time</li>
       </ul>
     </div>
 
@@ -756,11 +756,11 @@ function closeNav() {
 const typedEl = document.getElementById('typedLine');
 const lines = [
   '1st year waterloo eng. somehow still standing.',
-  'gtm engineer. growth engineer. it varies.',
+  'GTM Engineer. Growth Engineer. it varies.',
   'i build things. they mostly work.',
-  'bringing new products to market, apparently.',
   'your linkedin feed, probably.',
-  'gym. code. figure it out. repeat.',
+  'gym at 5am. code by 9. repeat.',
+  'making cold outreach a personality trait.',
 ];
 let li = 0, ci = 0, del = false;
 function type() {
