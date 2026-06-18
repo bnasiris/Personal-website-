@@ -6,7 +6,7 @@
   <title>Baran Nasiri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -29,7 +29,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       background: var(--cream);
       color: var(--text);
       overflow-x: hidden;
@@ -171,7 +171,7 @@
     .btn {
       display: inline-flex; align-items: center; gap: .4rem;
       padding: .68rem 1.5rem; border-radius: 50px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       font-size: .77rem; font-weight: 600;
       text-decoration: none; border: none;
       transition: transform .2s, box-shadow .2s, background .2s;
@@ -236,15 +236,17 @@
     .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-top: 1.4rem; }
     .card {
       background: var(--card); border-radius: 15px;
-      padding: 1rem 1.15rem; border: 1px solid var(--border);
+      padding: 1rem 1.15rem 1rem 1.3rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--pink);
       box-shadow: 0 3px 12px var(--shadow);
-      transition: transform .2s, box-shadow .2s;
+      transition: transform .2s, box-shadow .2s, border-left-color .2s;
     }
-    .card:hover { transform: translateY(-3px) rotate(.3deg); box-shadow: 0 9px 26px var(--shadow); }
-    .card-label { font-family: 'Fraunces', serif; font-size: .88rem; font-style: italic; font-weight: 400; color: var(--muted); margin-bottom: .55rem; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px var(--shadow); border-left-color: var(--rose); }
+    .card-label { font-family: 'Fraunces', serif; font-size: .9rem; font-style: italic; font-weight: 600; color: var(--pink); margin-bottom: .55rem; }
     .card-items { list-style: none; }
     .card-items li { font-size: .76rem; color: var(--muted); padding: .13rem 0; display: flex; gap: .32rem; line-height: 1.45; }
-    .card-items li::before { content: '›'; color: var(--pink3); flex-shrink: 0; }
+    .card-items li::before { content: '›'; color: var(--pink); flex-shrink: 0; font-weight: 700; }
 
     /* EXPERIENCE */
     #experience { background: var(--card); }
@@ -296,7 +298,7 @@
     .quest:nth-child(4) { transform: rotate(-.5deg); }
     .quest:hover { transform: rotate(0) translateY(-4px) scale(1.02); box-shadow: 0 11px 32px var(--shadow); z-index: 2; }
     .quest-icon { font-size: 1.6rem; margin-bottom: .55rem; }
-    .quest-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; font-weight: 600; color: var(--text); line-height: 1.45; margin-bottom: .3rem; margin-top: 1.6rem; padding-right: .5rem; }
+    .quest-title { font-family: 'DM Sans', sans-serif; font-size: .82rem; font-weight: 600; color: var(--text); line-height: 1.45; margin-bottom: .3rem; margin-top: 1.6rem; padding-right: .5rem; }
     .quest-desc { font-size: .76rem; color: var(--muted); line-height: 1.55; }
     .q-status { position: absolute; top: .85rem; right: .85rem; font-size: .57rem; font-weight: 700; letter-spacing: .5px; padding: .13rem .52rem; border-radius: 50px; text-transform: uppercase; }
     .q-live { background: rgba(34,197,94,.1); color: #15803d; border: 1px solid rgba(34,197,94,.2); }
@@ -322,11 +324,11 @@
       border: 1.5px solid var(--border); max-width: 100%;
       touch-action: none;
     }
-    .game-msg { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; font-weight: 500; color: var(--muted); margin-top: .55rem; min-height: 1.4rem; }
+    .game-msg { font-family: 'DM Sans', sans-serif; font-size: .82rem; font-weight: 500; color: var(--muted); margin-top: .55rem; min-height: 1.4rem; }
     .game-btns { display: flex; gap: .65rem; justify-content: center; margin-top: .85rem; flex-wrap: wrap; }
     .game-btn {
       padding: .52rem 1.3rem; border-radius: 50px; border: none;
-      font-size: .77rem; font-weight: 600; font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: .77rem; font-weight: 600; font-family: 'DM Sans', sans-serif;
       transition: transform .15s, box-shadow .15s;
     }
     .game-btn-p { background: linear-gradient(135deg, var(--pink), var(--rose)); color: #fff; box-shadow: 0 4px 14px rgba(224,54,106,.32); }
@@ -575,29 +577,28 @@
 
     <div class="exp-card reveal">
       <div class="exp-top">
-        <span class="exp-company">Sema</span>
-        <span class="exp-badge live">current</span>
+        <span class="exp-company">Decora Powder Coatings Ltd.</span>
+        <span class="exp-badge live">May 2026 – Present</span>
       </div>
-      <div class="exp-role">Growth Engineer</div>
+      <div class="exp-role">GTM Engineer · St. Catharines, ON</div>
       <ul class="exp-bullets">
-        <li>Running AI-powered cold outreach and prospecting campaigns, from copy to automation to tracking what actually converts</li>
-        <li>Helped grow the platform to <strong>25K+ users</strong> through targeted growth experiments and LinkedIn content strategy</li>
-        <li>Generated <strong>50K+ impressions</strong> in the first week of joining through LinkedIn content alone</li>
-        <li>Part content strategy, part growth engineering, part figuring out what works and cutting what doesn't</li>
+        <li>Leading go-to-market strategy for a first-of-its-kind North American product launch across <strong>3 priority customer segments</strong>, covering market sizing, ICP definition, pricing research, positioning, and sales messaging</li>
+        <li>Built and segmented a <strong>147-account target pipeline</strong> across architectural, extrusion, and custom manufacturing markets, prioritized by revenue potential, product fit, and decision-maker access</li>
+        <li>Analyzed <strong>23 competitors</strong> and substitute products to identify differentiation, buying triggers, and objections used in sales collateral and outbound strategy</li>
+        <li>Also embedded in HR integrating AI into how the team works: training workflows, onboarding systems, and internal automation</li>
       </ul>
     </div>
 
     <div class="exp-card reveal">
       <div class="exp-top">
-        <span class="exp-company">Decora Powder Coatings Ltd.</span>
-        <span class="exp-badge live">Spring 2026</span>
+        <span class="exp-company">Sema</span>
+        <span class="exp-badge">Jan 2026 – Apr 2026</span>
       </div>
-      <div class="exp-role">GTM Engineer · St. Catharines, ON</div>
+      <div class="exp-role">Growth Engineer · Toronto, ON</div>
       <ul class="exp-bullets">
-        <li>Decora has a product that's the first of its kind in North America. There's no playbook for this, which is exactly why the role exists.</li>
-        <li>Building the go-to-market from scratch: market entry strategy, positioning, outreach infrastructure, and sales and marketing systems for something customers have never seen before</li>
-        <li>The actual work: figuring out who the customer is, how to reach them, what to say, and how to turn an impressive product into something someone buys in 30 seconds</li>
-        <li>Also embedded in HR integrating AI into how the team works: training workflows, onboarding systems, internal automation, and AI agents that save people real time</li>
+        <li>Ran AI-powered outbound experiments across prospect research, cold email, LinkedIn distribution, and conversion tracking for a <strong>25K+ user</strong> platform</li>
+        <li>Generated <strong>270K+ LinkedIn impressions</strong> in two weeks by testing startup, finance, and AI-focused content angles and refining positioning through engagement data</li>
+        <li>Built repeatable research and personalization workflows to improve outbound quality and campaign iteration across customer segments</li>
       </ul>
     </div>
 
@@ -606,15 +607,52 @@
         <span class="exp-company">Herc's Nutrition</span>
         <span class="exp-badge">Sep 2024 – Dec 2025</span>
       </div>
-      <div class="exp-role">Growth and Sales · Ontario</div>
+      <div class="exp-role">Sales and Marketing Associate · St. Catharines, ON</div>
       <ul class="exp-bullets">
-        <li>Took Herc's Instagram from zero to <strong>15,000 followers</strong> across <strong>6 brand and location pages</strong> by actually understanding what made people stop scrolling</li>
-        <li>Supported the buildout of <strong>2 new store openings</strong>, which is a lot more chaotic than it sounds</li>
-        <li>Drove <strong>$76K+ in sales</strong> with <strong>40%+ conversion</strong> by listening first and pitching second</li>
-        <li>Tracked <strong>200+ SKUs</strong>, spotted patterns, flagged gaps. Generally: useful.</li>
+        <li>Drove <strong>$76K+</strong> in sales with <strong>40%+</strong> conversion through consultative selling, customer discovery, and product education</li>
+        <li>Grew Instagram from zero to <strong>15K+ followers</strong> across <strong>6 brand and location pages</strong>, supporting 2 new location openings in London, ON and Niagara-on-the-Lake</li>
+        <li>Tracked demand across <strong>200+ SKUs</strong>, surfaced inventory gaps, and translated customer feedback into product and sales priorities</li>
       </ul>
     </div>
 
+    <div class="exp-card reveal">
+      <div class="exp-top">
+        <span class="exp-company">La Vie en Rose</span>
+        <span class="exp-badge">Jun 2023 – Aug 2024</span>
+      </div>
+      <div class="exp-role">Lead Sales Associate · St. Catharines, ON</div>
+      <ul class="exp-bullets">
+        <li>Supported an estimated <strong>$760K+</strong> in annual store sales through client service, upselling, and POS execution across <strong>50+</strong> customer interactions per shift</li>
+        <li>Trained and onboarded <strong>18+ new associates</strong> on product knowledge, store standards, and sales floor workflow</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2.5rem;">
+    <span class="s-label" style="margin-bottom:.4rem;display:block">leadership</span>
+    <div class="exp-list">
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <span class="exp-company">KKC Classroom</span>
+          <span class="exp-badge live">Sep 2025 – Present</span>
+        </div>
+        <div class="exp-role">Founding Head of Content · Remote</div>
+        <ul class="exp-bullets">
+          <li>Helped build social distribution strategy across TikTok and Instagram, contributing to <strong>47M+ views</strong> through short-form content, audience testing, and creator-style growth tactics</li>
+        </ul>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <span class="exp-company">Waterloo Management Consulting Club</span>
+          <span class="exp-badge live">May 2026 – Present</span>
+        </div>
+        <div class="exp-role">Marketing Associate · Waterloo, ON</div>
+        <ul class="exp-bullets">
+          <li>Supporting marketing and student engagement initiatives, applying structured communication, audience targeting, and event promotion strategy</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
