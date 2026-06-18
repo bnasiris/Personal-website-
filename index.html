@@ -6,7 +6,7 @@
   <title>Baran Nasiri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -29,7 +29,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--cream);
       color: var(--text);
       overflow-x: hidden;
@@ -113,7 +113,7 @@
     }
     .nav-overlay.open { display: flex; }
     .nav-overlay a {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Fraunces', serif;
       font-size: 2.4rem; font-weight: 600; color: var(--text2);
       text-decoration: none; transition: color .2s;
     }
@@ -137,7 +137,7 @@
       opacity: 0; animation: fadeUp .7s .1s forwards;
     }
     .hero-name {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(4rem, 7vw, 7rem);
       line-height: .95; font-weight: 700; color: var(--text);
       margin-bottom: .9rem;
@@ -168,7 +168,7 @@
     .btn {
       display: inline-flex; align-items: center; gap: .4rem;
       padding: .68rem 1.5rem; border-radius: 50px;
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: .77rem; font-weight: 600;
       text-decoration: none; border: none;
       transition: transform .2s, box-shadow .2s, background .2s;
@@ -206,7 +206,7 @@
     /* SECTIONS */
     section { padding: 5.5rem 5rem; position: relative; z-index: 1; }
     .s-label { font-family: 'Caveat', cursive; font-size: 1rem; color: var(--pink2); margin-bottom: .45rem; display: block; }
-    .s-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.1rem, 3.2vw, 3rem); font-weight: 700; color: var(--text); line-height: 1.1; margin-bottom: .55rem; }
+    .s-title { font-family: 'Fraunces', serif; font-size: clamp(2.1rem, 3.2vw, 3rem); font-weight: 700; color: var(--text); line-height: 1.1; margin-bottom: .55rem; }
     .s-title em { font-style: italic; color: var(--pink); }
     .s-rule { width: 38px; height: 2.5px; border-radius: 2px; background: linear-gradient(90deg, var(--pink), var(--pink3)); margin-bottom: 2.8rem; }
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
@@ -254,7 +254,7 @@
     }
     .exp-card:hover { transform: translateX(5px); box-shadow: 0 7px 28px var(--shadow); }
     .exp-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .4rem; margin-bottom: .18rem; }
-    .exp-company { font-family: 'Cormorant Garamond', serif; font-size: 1.18rem; font-weight: 700; color: var(--text); }
+    .exp-company { font-family: 'Fraunces', serif; font-size: 1.18rem; font-weight: 700; color: var(--text); }
     .exp-badge { font-size: .63rem; font-weight: 700; letter-spacing: .5px; padding: .18rem .8rem; border-radius: 50px; background: rgba(224,54,106,.09); color: var(--rose); border: 1px solid var(--border); text-transform: uppercase; }
     .exp-badge.live { background: linear-gradient(135deg, var(--pink), var(--rose)); color: #fff; border-color: transparent; }
     .exp-role { font-size: .79rem; color: var(--pink); font-weight: 500; margin-bottom: .85rem; }
@@ -276,7 +276,7 @@
     }
     .edu-card:hover { transform: translateY(-3px); }
     .edu-icon { font-size: 2.4rem; flex-shrink: 0; }
-    .edu-school { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: .18rem; }
+    .edu-school { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: .18rem; }
     .edu-deg { font-size: .8rem; color: var(--pink); font-weight: 500; margin-bottom: .18rem; }
     .edu-meta { font-size: .7rem; color: var(--muted); }
 
@@ -312,7 +312,7 @@
     .game-desc { font-size: .76rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.6; }
     .game-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: .65rem; }
     .game-score-lbl { font-size: .73rem; color: var(--muted); }
-    .game-score-val { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 700; color: var(--pink); }
+    .game-score-val { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 700; color: var(--pink); }
     .game-hi { font-size: .68rem; color: var(--pink3); }
     #gameCanvas {
       display: block; margin: 0 auto; border-radius: 12px;
@@ -323,7 +323,7 @@
     .game-btns { display: flex; gap: .65rem; justify-content: center; margin-top: .85rem; flex-wrap: wrap; }
     .game-btn {
       padding: .52rem 1.3rem; border-radius: 50px; border: none;
-      font-size: .77rem; font-weight: 600; font-family: 'DM Sans', sans-serif;
+      font-size: .77rem; font-weight: 600; font-family: 'Plus Jakarta Sans', sans-serif;
       transition: transform .15s, box-shadow .15s;
     }
     .game-btn-p { background: linear-gradient(135deg, var(--pink), var(--rose)); color: #fff; box-shadow: 0 4px 14px rgba(224,54,106,.32); }
@@ -333,7 +333,7 @@
 
     /* CONTACT */
     #contact { background: var(--blush); text-align: center; padding: 5.5rem 4rem; }
-    .contact-head { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.3rem, 4.5vw, 3.8rem); font-weight: 700; color: var(--text); line-height: 1.15; margin-bottom: .75rem; }
+    .contact-head { font-family: 'Fraunces', serif; font-size: clamp(2.3rem, 4.5vw, 3.8rem); font-weight: 700; color: var(--text); line-height: 1.15; margin-bottom: .75rem; }
     .contact-head em { font-style: italic; color: var(--pink); }
     .contact-sub { font-size: .88rem; color: var(--muted); max-width: 420px; margin: 0 auto 2.3rem; line-height: 1.78; }
     .contact-links { display: flex; gap: .85rem; flex-wrap: wrap; justify-content: center; }
@@ -369,6 +369,25 @@
     @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
     @keyframes fadeIn { from{opacity:0} to{opacity:1} }
     @keyframes blink  { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* MARQUEE */
+    .marquee-strip {
+      background: var(--pink); overflow: hidden;
+      padding: .6rem 0; position: relative; z-index: 1;
+    }
+    .marquee-track {
+      display: flex; width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-strip:hover .marquee-track { animation-play-state: paused; }
+    .marquee-item {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: .68rem; font-weight: 600; letter-spacing: 1.8px;
+      text-transform: uppercase; color: rgba(255,255,255,.88);
+      padding: 0 1.4rem; white-space: nowrap;
+    }
+    .marquee-sep { color: rgba(255,255,255,.35); padding: 0 .2rem; }
+    @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
     /* RESPONSIVE */
     @media (max-width: 960px) {
@@ -458,6 +477,32 @@
     </div>
   </div>
 </section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">AI Agents</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Gym Rat</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Building in Public</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Startup Curious</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">5am Club</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Making Things</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">AI Agents</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Gym Rat</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Building in Public</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Startup Curious</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">5am Club</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Making Things</span><span class="marquee-sep">✦</span>
+  </div>
+</div>
 
 <!-- ABOUT -->
 <section id="about">
@@ -760,11 +805,48 @@ function type() {
 }
 setTimeout(type, 900);
 
-/* SCROLL REVEAL */
+/* SCROLL REVEAL — staggered */
 const ro = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) e.target.classList.add('visible');
+  if (!e.isIntersecting) return;
+  const sibs = [...e.target.parentElement.children].filter(c => c.classList.contains('reveal'));
+  const idx  = sibs.indexOf(e.target);
+  e.target.style.transitionDelay = Math.min(idx * 0.08, 0.32) + 's';
+  e.target.classList.add('visible');
 }), { threshold: 0.07 });
 document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+/* MAGNETIC BUTTONS */
+document.querySelectorAll('.hero-btns .btn').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const r  = btn.getBoundingClientRect();
+    const dx = (e.clientX - (r.left + r.width  / 2)) * 0.28;
+    const dy = (e.clientY - (r.top  + r.height / 2)) * 0.28;
+    btn.style.transform = `translate(${dx}px,${dy}px)`;
+  });
+  btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+});
+
+/* CLICK SPARKS */
+function spawnSparks(x, y) {
+  for (let i = 0; i < 7; i++) {
+    const s = document.createElement('div');
+    const angle = (i / 7) * Math.PI * 2;
+    const dist  = 18 + Math.random() * 18;
+    s.style.cssText = `position:fixed;left:${x}px;top:${y}px;width:5px;height:5px;
+      border-radius:50%;background:var(--pink);pointer-events:none;z-index:9997;
+      transform:translate(-50%,-50%)`;
+    document.body.appendChild(s);
+    s.animate([
+      { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 },
+      { transform: `translate(calc(-50% + ${Math.cos(angle)*dist}px),calc(-50% + ${Math.sin(angle)*dist}px)) scale(0)`, opacity: 0 }
+    ], { duration: 500, easing: 'ease-out' }).onfinish = () => s.remove();
+  }
+}
+document.addEventListener('click',     e => spawnSparks(e.clientX, e.clientY));
+document.addEventListener('touchstart', e => {
+  const t = e.touches[0];
+  spawnSparks(t.clientX, t.clientY);
+}, { passive: true });
 
 /* ── ENDLESS RUNNER GAME ───────────────────────────────── */
 const canvas = document.getElementById('gameCanvas');
