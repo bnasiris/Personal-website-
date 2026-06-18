@@ -6,7 +6,7 @@
   <title>Baran Nasiri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -116,7 +116,7 @@
     }
     .nav-overlay.open { display: flex; }
     .nav-overlay a {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Fraunces', serif;
       font-size: 2.4rem; font-weight: 600; color: var(--text2);
       text-decoration: none; transition: color .2s;
     }
@@ -140,7 +140,7 @@
       opacity: 0; animation: fadeUp .7s .1s forwards;
     }
     .hero-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(4rem, 7vw, 7rem);
       line-height: .95; font-weight: 700; color: var(--text);
       margin-bottom: .9rem;
@@ -209,7 +209,7 @@
     /* SECTIONS */
     section { padding: 5.5rem 5rem; position: relative; z-index: 1; }
     .s-label { font-family: 'Caveat', cursive; font-size: 1rem; color: var(--pink2); margin-bottom: .45rem; display: block; }
-    .s-title { font-family: 'Syne', sans-serif; font-size: clamp(2.1rem, 3.2vw, 3rem); font-weight: 700; color: var(--text); line-height: 1.1; margin-bottom: .55rem; }
+    .s-title { font-family: 'Fraunces', serif; font-size: clamp(2.1rem, 3.2vw, 3rem); font-weight: 700; color: var(--text); line-height: 1.1; margin-bottom: .55rem; }
     .s-title em { font-style: italic; color: var(--pink); }
     .s-rule { width: 38px; height: 2.5px; border-radius: 2px; background: linear-gradient(90deg, var(--pink), var(--pink3)); margin-bottom: 2.8rem; }
     .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
@@ -241,7 +241,7 @@
       transition: transform .2s, box-shadow .2s;
     }
     .card:hover { transform: translateY(-3px) rotate(.3deg); box-shadow: 0 9px 26px var(--shadow); }
-    .card-label { font-family: 'Caveat', cursive; font-size: .93rem; color: var(--pink); font-weight: 700; margin-bottom: .5rem; }
+    .card-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .72rem; color: var(--pink); font-weight: 700; letter-spacing: .5px; text-transform: uppercase; margin-bottom: .5rem; }
     .card-items { list-style: none; }
     .card-items li { font-size: .76rem; color: var(--muted); padding: .13rem 0; display: flex; gap: .32rem; line-height: 1.45; }
     .card-items li::before { content: '›'; color: var(--pink3); flex-shrink: 0; }
@@ -257,7 +257,7 @@
     }
     .exp-card:hover { transform: translateX(5px); box-shadow: 0 7px 28px var(--shadow); }
     .exp-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .4rem; margin-bottom: .18rem; }
-    .exp-company { font-family: 'Syne', sans-serif; font-size: 1.18rem; font-weight: 700; color: var(--text); }
+    .exp-company { font-family: 'Fraunces', serif; font-size: 1.18rem; font-weight: 700; color: var(--text); }
     .exp-badge { font-size: .63rem; font-weight: 700; letter-spacing: .5px; padding: .18rem .8rem; border-radius: 50px; background: rgba(224,54,106,.09); color: var(--rose); border: 1px solid var(--border); text-transform: uppercase; }
     .exp-badge.live { background: linear-gradient(135deg, var(--pink), var(--rose)); color: #fff; border-color: transparent; }
     .exp-role { font-size: .79rem; color: var(--pink); font-weight: 500; margin-bottom: .85rem; }
@@ -279,7 +279,7 @@
     }
     .edu-card:hover { transform: translateY(-3px); }
     .edu-icon { font-size: 2.4rem; flex-shrink: 0; }
-    .edu-school { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: .18rem; }
+    .edu-school { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: .18rem; }
     .edu-deg { font-size: .8rem; color: var(--pink); font-weight: 500; margin-bottom: .18rem; }
     .edu-meta { font-size: .7rem; color: var(--muted); }
 
@@ -315,7 +315,7 @@
     .game-desc { font-size: .76rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.6; }
     .game-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: .65rem; }
     .game-score-lbl { font-size: .73rem; color: var(--muted); }
-    .game-score-val { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--pink); }
+    .game-score-val { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 700; color: var(--pink); }
     .game-hi { font-size: .68rem; color: var(--pink3); }
     #gameCanvas {
       display: block; margin: 0 auto; border-radius: 12px;
@@ -336,7 +336,7 @@
 
     /* CONTACT */
     #contact { background: var(--blush); text-align: center; padding: 5.5rem 4rem; }
-    .contact-head { font-family: 'Syne', sans-serif; font-size: clamp(2.3rem, 4.5vw, 3.8rem); font-weight: 700; color: var(--text); line-height: 1.15; margin-bottom: .75rem; }
+    .contact-head { font-family: 'Fraunces', serif; font-size: clamp(2.3rem, 4.5vw, 3.8rem); font-weight: 700; color: var(--text); line-height: 1.15; margin-bottom: .75rem; }
     .contact-head em { font-style: italic; color: var(--pink); }
     .contact-sub { font-size: .88rem; color: var(--muted); max-width: 420px; margin: 0 auto 2.3rem; line-height: 1.78; }
     .contact-links { display: flex; gap: .85rem; flex-wrap: wrap; justify-content: center; }
