@@ -322,7 +322,7 @@
       border: 1.5px solid var(--border); max-width: 100%;
       touch-action: none;
     }
-    .game-msg { font-family: 'Caveat', cursive; font-size: 1.2rem; color: var(--rose); margin-top: .55rem; min-height: 1.7rem; }
+    .game-msg { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; font-weight: 500; color: var(--muted); margin-top: .55rem; min-height: 1.4rem; }
     .game-btns { display: flex; gap: .65rem; justify-content: center; margin-top: .85rem; flex-wrap: wrap; }
     .game-btn {
       padding: .52rem 1.3rem; border-radius: 50px; border: none;
@@ -888,11 +888,11 @@ function startGame() {
 function endGame() {
   running = false;
   if (score > best) { best = score; document.getElementById('gBest').textContent = 'best: ' + best; }
-  const msg = score < 15 ? 'bestie... we need to talk 😭'
-            : score < 40 ? 'okay decent, not bad'
-            : score < 70 ? 'actually pretty solid 👀'
-            : score < 100 ? 'okay you are kind of good at this'
-            : 'you are literally built for this 💅';
+  const msg = score < 15 ? 'not your best run.'
+            : score < 40 ? 'decent. try again.'
+            : score < 70 ? 'solid run.'
+            : score < 100 ? 'good.'
+            : 'impressive.';
   document.getElementById('gMsg').textContent = msg;
   document.getElementById('gRestart').style.display = 'inline-flex';
 }
