@@ -44,8 +44,11 @@
     /* custom cursor */
     #cursor {
       position: fixed; pointer-events: none; z-index: 9999;
-      transform: translate(-50%,-50%); font-size: 14px;
-      line-height: 1; user-select: none; will-change: left, top;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--pink);
+      transform: translate(-50%,-50%);
+      transition: transform .12s ease, width .12s ease, height .12s ease;
+      will-change: left, top;
     }
     #cursor-trail {
       position: fixed; width: 28px; height: 28px; border-radius: 50%;
@@ -414,14 +417,7 @@
 </head>
 <body>
 
-<div class="petal" style="--x:7%;--dur:17s;--delay:0s">🌸</div>
-<div class="petal" style="--x:22%;--dur:22s;--delay:4s">💕</div>
-<div class="petal" style="--x:50%;--dur:15s;--delay:1.5s">✦</div>
-<div class="petal" style="--x:71%;--dur:20s;--delay:6s">🌸</div>
-<div class="petal" style="--x:88%;--dur:18s;--delay:2.5s">💕</div>
-<div class="petal" style="--x:36%;--dur:25s;--delay:9s">✦</div>
-
-<div id="cursor">♥</div>
+<div id="cursor"></div>
 <div id="cursor-trail"></div>
 
 <nav id="navbar">
@@ -454,10 +450,10 @@
     <p class="hero-typed" id="typedLine"><span class="blink">|</span></p>
     <p class="hero-bio">
       <strong>GTM Engineer</strong> at Decora,
-      Growth Engineer at Sema, gym rat by 5am. i build AI agents, cold-email
-      founders for fun, and have accidentally turned LinkedIn into a whole thing.
-      currently in the business of bringing products nobody has seen before
-      to people who don't know they need them yet.
+      Growth Engineer at Sema, management engineering at Waterloo. i build AI agents,
+      do cold outreach for fun, and have accidentally made LinkedIn a bigger part of
+      my life than expected. currently working on bringing a first-of-its-kind
+      North American product to market.
     </p>
     <div class="hero-btns">
       <a href="https://linkedin.com/in/barannasiri" target="_blank" rel="noopener" class="btn btn-solid">LinkedIn ↗</a>
@@ -468,12 +464,9 @@
 
   <div class="hero-photo-wrap">
     <div class="polaroid">
-      <span class="sticker">🌸</span>
-      <span class="sticker">⭐</span>
-      <span class="sticker">💕</span>
       <img src="photo.jpg" alt="Baran Nasiri"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-      <div class="photo-fallback" style="display:none;">✦</div>
+      <div class="photo-fallback" style="display:none;">BN</div>
     </div>
   </div>
 </section>
@@ -481,34 +474,34 @@
 <!-- MARQUEE -->
 <div class="marquee-strip" aria-hidden="true">
   <div class="marquee-track">
-    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">AI Agents</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Gym Rat</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Building in Public</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Startup Curious</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">5am Club</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Making Things</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">AI Agents</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Gym Rat</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Building in Public</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Startup Curious</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">5am Club</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Making Things</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">AI Agents</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Fitness</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Go-To-Market</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Management Engineering</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">LinkedIn Content</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Building Products</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">GTM Engineer</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Growth Engineer</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Waterloo Engineering</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">AI Agents</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Cold Outreach</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Fitness</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Go-To-Market</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Management Engineering</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">LinkedIn Content</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Building Products</span><span class="marquee-sep">·</span>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="reveal">
-    <span class="s-label">get to know me ✦</span>
-    <h2 class="s-title">Currently <em>obsessing</em> over</h2>
+    <span class="s-label">about</span>
+    <h2 class="s-title">Currently working on</h2>
     <div class="s-rule"></div>
   </div>
 
@@ -526,42 +519,42 @@
         roles that don't have a clean job title, which honestly suits me fine.
       </p>
       <p class="about-bio reveal">
-        outside of school: gym is non-negotiable, LinkedIn is dangerously close
-        to becoming a personality, and i'm always in the middle of some experiment
-        that may or may not pan out.
+        outside of school: the gym is consistent, LinkedIn is taking up more
+        headspace than expected, and there's always some project running in the
+        background that may or may not go anywhere.
       </p>
 
       <div class="card-grid reveal">
         <div class="card">
-          <div class="card-label">🤖 building right now</div>
+          <div class="card-label">building right now</div>
           <ul class="card-items">
             <li>GTM strategy for a product with no North American playbook</li>
-            <li>AI tools that actually save HR teams time</li>
-            <li>growth systems that work without me babysitting them</li>
+            <li>AI tools that save HR teams real time</li>
+            <li>growth systems that run without constant intervention</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">💪 non-negotiables</div>
+          <div class="card-label">constants</div>
           <ul class="card-items">
-            <li>early gym sessions (she/her/gainz)</li>
-            <li>LinkedIn posts people actually finish reading</li>
-            <li>figuring out what i don't know yet</li>
+            <li>early gym sessions</li>
+            <li>LinkedIn content that actually lands</li>
+            <li>learning what i don't know yet</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">📈 getting dangerously good at</div>
+          <div class="card-label">currently learning</div>
           <ul class="card-items">
             <li>go-to-market from scratch</li>
-            <li>Python + automation</li>
-            <li>cold outreach that doesn't make people cringe</li>
+            <li>Python and automation</li>
+            <li>cold outreach that converts</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">☕ will yap forever about</div>
+          <div class="card-label">always thinking about</div>
           <ul class="card-items">
-            <li>why fitness and tech overlap more than people think</li>
-            <li>AI in HR and what that actually looks like</li>
-            <li>Waterloo co-op chaos, generally</li>
+            <li>where fitness and technology actually overlap</li>
+            <li>what AI in HR looks like in practice</li>
+            <li>how to build things people actually use</li>
           </ul>
         </div>
       </div>
@@ -572,7 +565,7 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="reveal">
-    <span class="s-label">what i've been doing ✦</span>
+    <span class="s-label">work</span>
     <h2 class="s-title">Experience</h2>
     <div class="s-rule"></div>
   </div>
@@ -582,7 +575,7 @@
     <div class="exp-card reveal">
       <div class="exp-top">
         <span class="exp-company">Sema</span>
-        <span class="exp-badge live">current ✦</span>
+        <span class="exp-badge live">current</span>
       </div>
       <div class="exp-role">Growth Engineer</div>
       <ul class="exp-bullets">
@@ -596,7 +589,7 @@
     <div class="exp-card reveal">
       <div class="exp-top">
         <span class="exp-company">Decora Powder Coatings Ltd.</span>
-        <span class="exp-badge live">Spring 2026 ✦</span>
+        <span class="exp-badge live">Spring 2026</span>
       </div>
       <div class="exp-role">GTM Engineer · St. Catharines, ON</div>
       <ul class="exp-bullets">
@@ -627,12 +620,11 @@
 <!-- EDUCATION -->
 <section id="education">
   <div class="reveal">
-    <span class="s-label">where i'm based ✦</span>
+    <span class="s-label">education</span>
     <h2 class="s-title">Education</h2>
     <div class="s-rule"></div>
   </div>
   <div class="edu-card reveal">
-    <div class="edu-icon">🎓</div>
     <div>
       <div class="edu-school">University of Waterloo</div>
       <div class="edu-deg">Bachelor of Applied Science · Management Engineering</div>
@@ -644,47 +636,41 @@
 <!-- SIDE QUESTS -->
 <section id="quests">
   <div class="reveal">
-    <span class="s-label">the unofficial resume ✦</span>
-    <h2 class="s-title">Side <em>Quests</em></h2>
+    <span class="s-label">side projects</span>
+    <h2 class="s-title">Side <em>Projects</em></h2>
     <div class="s-rule"></div>
   </div>
 
   <div class="quests-grid">
     <div class="quest reveal">
       <span class="q-status q-live">ongoing</span>
-      <div class="quest-icon">📱</div>
-      <div class="quest-title">started posting on LinkedIn and accidentally made it my whole personality</div>
-      <p class="quest-desc">2,000+ followers. questionable number of drafts. zero regrets.</p>
+      <div class="quest-title">started posting on LinkedIn, now it's become a real thing</div>
+      <p class="quest-desc">2,000+ followers. posting about GTM, engineering, and startups. more drafts than posts.</p>
     </div>
     <div class="quest reveal">
-      <span class="q-status q-arc">arc</span>
-      <div class="quest-icon">💪</div>
-      <div class="quest-title">gym girl era (in progress, very serious)</div>
-      <p class="quest-desc">started for the gains. stayed for the identity. the early alarms are a feature, not a bug.</p>
+      <span class="q-status q-arc">ongoing</span>
+      <div class="quest-title">training consistently</div>
+      <p class="quest-desc">the gym is a non-negotiable at this point. fitness is a big part of how i think and work.</p>
     </div>
     <div class="quest reveal">
       <span class="q-status q-done">done</span>
-      <div class="quest-icon">📈</div>
-      <div class="quest-title">grew a brand's Instagram from 0 to 15K across 6 pages</div>
-      <p class="quest-desc">understanding people beats knowing what to post. turns out that's the whole thing.</p>
+      <div class="quest-title">grew a brand's Instagram from zero to 15K across 6 pages</div>
+      <p class="quest-desc">understanding what makes people stop scrolling matters more than knowing what to post.</p>
     </div>
     <div class="quest reveal">
-      <span class="q-status q-live">new</span>
-      <div class="quest-icon">🚀</div>
+      <span class="q-status q-live">current</span>
       <div class="quest-title">bringing a first-of-its-kind North American product to market</div>
-      <p class="quest-desc">no playbook. no precedent. figuring it out in real time. the best kind of problem.</p>
+      <p class="quest-desc">no existing playbook. building the go-to-market strategy from scratch at Decora.</p>
     </div>
     <div class="quest reveal">
       <span class="q-status q-live">ongoing</span>
-      <div class="quest-icon">☕</div>
-      <div class="quest-title">cold outreach and startup coffee chats</div>
-      <p class="quest-desc">conversion rate: low. caffeine intake: high. learnings: worth it.</p>
+      <div class="quest-title">cold outreach and startup conversations</div>
+      <p class="quest-desc">talking to founders, operators, and builders. low response rate, high learning rate.</p>
     </div>
     <div class="quest reveal">
-      <span class="q-status q-arc">arc</span>
-      <div class="quest-icon">📸</div>
-      <div class="quest-title">building to 500K on Instagram. posting about startups, engineering, GTM, and the chaos in between.</div>
-      <p class="quest-desc">long-form content, honest takes, and the occasional unhinged thought. follow if you want front-row seats.</p>
+      <span class="q-status q-arc">in progress</span>
+      <div class="quest-title">building to 500K on Instagram — startups, engineering, and GTM</div>
+      <p class="quest-desc">documenting the process of building, learning, and figuring things out in public.</p>
       <a href="https://www.instagram.com/8aranineng/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;margin-top:.75rem;font-size:.74rem;font-weight:600;color:var(--pink);text-decoration:none;border:1px solid var(--border);border-radius:50px;padding:.28rem .75rem;background:var(--blush);transition:all .2s;" onmouseenter="this.style.background='var(--pink)';this.style.color='#fff'" onmouseleave="this.style.background='var(--blush)';this.style.color='var(--pink)'">follow ↗</a>
     </div>
   </div>
@@ -693,12 +679,12 @@
 <!-- GAME -->
 <section id="game">
   <div class="reveal">
-    <span class="s-label" style="text-align:center;display:block">you've scrolled this far ✦</span>
+    <span class="s-label" style="text-align:center;display:block">take a break</span>
     <h2 class="s-title" style="text-align:center">Take a <em>Break</em></h2>
     <div class="s-rule" style="margin:0 auto 2.8rem;"></div>
   </div>
   <div class="game-wrap reveal">
-    <div class="game-title">✦ the daily run ✦</div>
+    <div class="game-title">the daily run</div>
     <p class="game-desc">dodge the red flags. collect the good stuff. tap or press space to jump.</p>
     <div class="game-hud">
       <div class="game-score-lbl">score: <span class="game-score-val" id="gScore">0</span></div>
@@ -707,7 +693,7 @@
     <canvas id="gameCanvas" width="460" height="200"></canvas>
     <div class="game-msg" id="gMsg"></div>
     <div class="game-btns">
-      <button class="game-btn game-btn-p" id="gStart" onclick="startGame()">Run ✦</button>
+      <button class="game-btn game-btn-p" id="gStart" onclick="startGame()">Play</button>
       <button class="game-btn game-btn-s" id="gRestart" onclick="startGame()" style="display:none">Again?</button>
     </div>
     <p class="game-hint">tap canvas / press space / click to jump</p>
@@ -720,7 +706,7 @@
     <h2 class="contact-head">want to build<br>something cool?<br><em>let's talk.</em></h2>
     <p class="contact-sub">
       open to opportunities, startup convos, growth experiments, or just someone
-      who wants to yap about AI, fitness, and building things. ✦
+      interested in AI, growth, fitness, or building something.
     </p>
     <div class="contact-links">
       <a href="mailto:barannasiri86@gmail.com" class="contact-link">
@@ -740,7 +726,7 @@
 </section>
 
 <footer>
-  <p>made with <span class="p">♥</span> by <span class="p">baran nasiri</span> · 2026</p>
+  <p>made by <span class="p">baran nasiri</span> · 2026</p>
 </footer>
 
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
@@ -760,8 +746,8 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(animTrail);
 })();
 document.querySelectorAll('a,button,.card,.quest,.exp-card,.contact-link').forEach(el => {
-  el.addEventListener('mouseenter', () => cur.style.transform = 'translate(-50%,-50%) scale(2.2)');
-  el.addEventListener('mouseleave', () => cur.style.transform = 'translate(-50%,-50%) scale(1)');
+  el.addEventListener('mouseenter', () => { cur.style.width = '20px'; cur.style.height = '20px'; cur.style.opacity = '.4'; });
+  el.addEventListener('mouseleave', () => { cur.style.width = '8px'; cur.style.height = '8px'; cur.style.opacity = '1'; });
 });
 
 /* NAV */
